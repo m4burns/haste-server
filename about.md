@@ -7,11 +7,16 @@ To make a new entry, click "New" (or type 'control + n')
 
 ## From the Console
 
-`cat something | haste` # http://hastebin.com/1238193
+Setup (put this in a .profile)
+
+haste() { a=$(cat); curl -X POST -s -d "$a" http://paste.dev.d2l/documents | awk -F '"' '{print "http://paste.dev.d2l/"$4}'; }
+
+Then:
+
+cat something | haste
 
 ## Author
 
-* [haste-client](https://github.com/seejohnrun/haste-client)
 * [haste-server](https://github.com/seejohnrun/haste-server)
 
 Code by John Crepezzi <john.crepezzi@gmail.com>
