@@ -1,6 +1,6 @@
 {
 
-  "host": "0.0.0.0",
+  "host": "127.0.0.1",
   "port": 7777,
 
   "keyLength": 10,
@@ -13,7 +13,7 @@
 
   "logging": [
     {
-      "level": "verbose",
+      "level": "warn",
       "type": "Console",
       "colorize": true
     }
